@@ -9,7 +9,7 @@ describe('backend-express-template routes', () => {
   });
   it('#GET all should return a list of Pantones', async () => {
     const res = await request(app).get('/api/v1/colors');
-    console.log('hey all Panbtones res', res.body);
+    console.log('hey all Pantones res', res.body);
     expect(res.status).toBe(200);
   });
 
