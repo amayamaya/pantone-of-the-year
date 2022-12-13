@@ -14,7 +14,7 @@ describe('backend-express-template routes', () => {
     expect(res.status).toBe(200);
   });
 
-  it('#GET by id should return a single Pantone', async () => {
+  it.only('#GET by id should return a single Pantone', async () => {
     const res = await request(app).get('/api/v1/colors/1');
     console.log('Single Pantone res', res.body);
     expect(res.status).toEqual({
